@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import './src/i18n'
+import './i18n'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import LoadingAnimation from './src/components/ReutComp/LoadingAnimation'
+import LoadingAnimation from './components/ReutComp/LoadingAnimation'
 
 const App = lazy(() => import("./App"));
 

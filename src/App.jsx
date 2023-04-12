@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './src/App.css';
-import Home from './src/components/Home';
-import Experience from './src/components/Experience';
-import Header from './src/components/patterns/Header';
-import AboutMe from './src/components/AboutMe';
-import MyProjects from './src/components/MyProjects';
-import FinalForm from './src/components/FinalForm';
-import Footer from './src/components/patterns/Footer';
-import pdfCV from './images/Curriculum.pdf';
-import pdfCVEn from './images/CurriculumEN.pdf'
+import './App.css';
+import Home from './components/Home';
+import Experience from './components/Experience';
+import Header from './components/patterns/Header';
+import AboutMe from './components/AboutMe';
+import MyProjects from './components/MyProjects';
+import FinalForm from './components/FinalForm';
+import Footer from './components/patterns/Footer';
+import pdfCV from '/images/Curriculum.pdf';
+import pdfCVEn from '/images/CurriculumEN.pdf'
 
 import ScrollReveal from 'scrollreveal';
 import { useTranslation } from 'react-i18next';

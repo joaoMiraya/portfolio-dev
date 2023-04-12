@@ -1,5 +1,5 @@
 import React from "react";
-import deliveryPhoto from '../../images/deliveryPhoto.png';
+import deliveryPhoto from '/images/deliveryPhoto.png';
 
 function MyProjects({t}) {
     return (
