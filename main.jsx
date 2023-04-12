@@ -1,10 +1,10 @@
 import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import './i18n'
+import './src/i18n'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import LoadingAnimation from './components/ReutComp/LoadingAnimation'
+import LoadingAnimation from './src/components/ReutComp/LoadingAnimation'
 
-const App = lazy(() => import("./App"));
+const App = lazy(() => import("./src/App"));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
