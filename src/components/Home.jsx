@@ -30,7 +30,7 @@ function Home({ t }) {
     }, [])
     return (
         <>
-            <div className='container bg-[url(./src/assets/images/bgteste.png)] bg-fixed bg-cover bg-repeat-space flex flex-col justify-between text-center h-screen text-white p-4 sm:justify-start  '>
+            <div className='container bg-[url(./public/images/bgteste.png)] bg-fixed bg-cover bg-repeat-space flex flex-col justify-between text-center h-screen text-white p-4 sm:justify-start  '>
                 <div className=' sm:w-full md:flex w-4/5 md:flex-col md:w-full md:h-full  md:justify-evenly md:pl-[30%] md:text-center text-2xl ml-16 xl:pr-16 mt-20'>
 
                     <h1 className=' sm:text-4xl md:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-[#FFD700] '
