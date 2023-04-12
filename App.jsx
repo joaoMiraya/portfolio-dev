@@ -7,8 +7,8 @@ import AboutMe from './src/components/AboutMe';
 import MyProjects from './src/components/MyProjects';
 import FinalForm from './src/components/FinalForm';
 import Footer from './src/components/patterns/Footer';
-import pdfCV from './assets/assets/images/Curriculum.pdf';
-import pdfCVEn from './assets/assets/images/CurriculumEN.pdf'
+import pdfCV from './images/Curriculum.pdf';
+import pdfCVEn from './images/CurriculumEN.pdf'
 
 import ScrollReveal from 'scrollreveal';
 import { useTranslation } from 'react-i18next';
