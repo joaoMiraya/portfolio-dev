@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import photo from '../../public/images/photo.png';
+import photo from '../../assets/images/photo.png';
 import { BsDownload } from 'react-icons/bs';
 
 function AboutMe({ pdfCV, btnCvRef, pdfCVEn, t, currentLanguage }) {
