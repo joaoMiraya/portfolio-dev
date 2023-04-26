@@ -4,7 +4,6 @@ import { FaReact, FaNodeJs, FaDocker } from 'react-icons/fa';
 import { SiJavascript, SiTailwindcss } from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
-import Teste from "./Teste";
 
 
 function Experience({ t }) {

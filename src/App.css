@@ -60,13 +60,9 @@ input {
   border: #93e7ba solid 2px;
   box-shadow: inset 0 0 0px #fffcfd, 0 0 8px #93e7ba;
 }
-
-.hoverNav:hover {
-  border-bottom: 2px #f100b5 solid;
-}
-
-.hoverNavThemeDefault:hover {
-  border-bottom: inherit;
+.coursesDefaultTheme {
+  border: #93e7ba solid 1px;
+  box-shadow: inset 0 0 0px #000, 0 0 16px #93e7ba;
 }
 
 /* DEFAULT THEME END */
@@ -110,8 +106,7 @@ input {
 /* PINK THEME END */
 
 
-
-
+    /* SHADOW TO TECs */
 .shadow-js {
   box-shadow: inset 0 0 15px #f3d10f, 0 0 16px #f3d10f;
 }

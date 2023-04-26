@@ -6,9 +6,9 @@ import { AiOutlineHome, AiFillGithub } from 'react-icons/ai';
 import { RiContactsLine } from 'react-icons/ri';
 import { BsCodeSlash, BsGear } from 'react-icons/bs';
 import { SlSocialLinkedin } from 'react-icons/sl';
-import { SiGmail } from 'react-icons/si';
+import { GiGraduateCap } from 'react-icons/gi';
 
-function Header({ handleBackToHome, handleBackToTech, handleBackToProjects, btnCvRef, btnFinalFormRef, handleChangeLanguage, currentLanguage }) {
+function Header({ handleBackToHome, handleBackToTech, handleBackToProjects, handleBackToCourses, btnCvRef, btnFinalFormRef, handleChangeLanguage, currentLanguage }) {
 
     const [config, setConfig] = useState(false);
     const optionRef = useRef();
@@ -90,7 +90,7 @@ function Header({ handleBackToHome, handleBackToTech, handleBackToProjects, btnC
     return (
 
         <nav ref={navBarRef} className='z-40 navDefaultTheme flex flex-col justify-between overflow-y-hidden gap-8  items-center pt-4 w-16 h-full fixed bg-transparent '>
-            <div className='flex flex-col hoverNavThemeDefault gap-6 '>
+            <div className='flex flex-col gap-6 '>
                 <div className=" flex justify-between ">
                     <div ref={optionRef}>
                         <BsGear size={35} onClick={handleClick} className=' cursor-pointer' />
@@ -113,6 +113,7 @@ function Header({ handleBackToHome, handleBackToTech, handleBackToProjects, btnC
                 <AiOutlineHome size={35} onClick={handleBackToHome} className=' cursor-pointer hover:border-b-2 border-green-200' />
                 <RiContactsLine size={35} onClick={handleBackToTech} className=' cursor-pointer hover:border-b-2 border-green-200' />
                 <BsCodeSlash size={35} onClick={handleBackToProjects} className=' cursor-pointer hover:border-b-2 border-green-200' />
+                <GiGraduateCap size={35} onClick={handleBackToCourses} className=' cursor-pointer hover:border-b-2 border-green-200' />
             </div>
             <div className='flex flex-col mb-6 gap-6 z-60'>
                 <a href="https://github.com/joaomiraya" target="_blank"><AiFillGithub className=' cursor-pointer hover:border-b-2 border-green-200' size={35} /></a>

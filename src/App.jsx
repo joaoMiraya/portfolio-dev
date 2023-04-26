@@ -7,6 +7,8 @@ import AboutMe from './components/AboutMe';
 import MyProjects from './components/MyProjects';
 import FinalForm from './components/FinalForm';
 import Footer from './components/patterns/Footer';
+import Courses from './components/Courses';
+
 import pdfCV from '/images/Curriculum.pdf';
 import pdfCVEn from '/images/CurriculumEN.pdf'
 
@@ -33,6 +35,7 @@ function App() {
   const sectionProjectRef = useRef();
   const textRef = useRef();
   const btnFinalFormRef = useRef();
+  const sectionCoursesRef = useRef();
 
   function handleBackToHome() {
     const homeSectionPosition = sectionHomeRef.current.offsetTop;
@@ -45,6 +48,10 @@ function App() {
   function handleBackToProjects() {
     const projectSectionPosition = sectionProjectRef.current.offsetTop;
     window.scrollTo({ top: projectSectionPosition, behavior: 'smooth' });
+  };
+  function handleBackToCourses() {
+    const courseSectionPosition = sectionCoursesRef.current.offsetTop;
+    window.scrollTo({ top: courseSectionPosition, behavior: 'smooth' });
   };
   /* SECTION SCROLL CONTROLL END*/
 
@@ -109,6 +116,11 @@ function App() {
       reset: true,
       rotate: { x: 100, y: 0, z: 0 }
     });
+    sr.reveal('.text-courses', {
+      delay: 800,
+      reset: true,
+      rotate: { x: 100, y: 0, z: 0 }
+    });
     sr.reveal('.photo-aboutMe', {
       delay: 500,
       reset: true,
@@ -127,6 +139,7 @@ function App() {
         handleBackToTech={handleBackToTech}
         handleBackToHome={handleBackToHome}
         handleBackToProjects={handleBackToProjects}
+        handleBackToCourses={handleBackToCourses}
         btnCvRef={btnCvRef}
         btnFinalFormRef={btnFinalFormRef}
         handleChangeLanguage={handleChangeLanguage}
@@ -158,6 +171,10 @@ function App() {
           currentLanguage={currentLanguage}
         />
 
+      </section>
+
+      <section ref={sectionCoursesRef}>
+        <Courses t={t} />
       </section>
 
       <section>
